@@ -4,6 +4,16 @@ A completely decoupled, event-driven real-time fraud detection pipeline. This re
 
 **Stack:** Kafka · Redis · XGBoost · MLflow · Evidently · Prefect · Prometheus · Grafana · Streamlit
 
+The prometheus dashboard:
+
+
+https://github.com/user-attachments/assets/545bfb7f-6dbd-453a-ad80-14b72c87156e
+
+
+
+Streamlit dashboard:
+
+<img width="1449" height="821" alt="Screenshot 2026-03-09 at 9 02 32 PM" src="https://github.com/user-attachments/assets/2ee5e63e-ef3f-441d-b514-5ed3bc4d49dc" />
 ## How It Works
 
 1. **`kafka/producer.py`** reads `data/fraudTest.csv` and streams rows into a `raw-transactions` Kafka topic at a configurable rate (`config.yaml`).
@@ -105,15 +115,6 @@ docker-compose.yml     # All infrastructure
 makefile               # Shortcuts for every step
 ```
 
-The prometheus dashboard:
 
-
-https://github.com/user-attachments/assets/545bfb7f-6dbd-453a-ad80-14b72c87156e
-
-
-
-Streamlit dashboard:
-
-<img width="1449" height="821" alt="Screenshot 2026-03-09 at 9 02 32 PM" src="https://github.com/user-attachments/assets/2ee5e63e-ef3f-441d-b514-5ed3bc4d49dc" />
 
 
